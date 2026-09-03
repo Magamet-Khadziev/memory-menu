@@ -777,3 +777,82 @@ body {
         padding: 18px 0 8px;
     }
 }
+/* ========================================
+   ИСПРАВЛЕНИЕ ДЛЯ ПЛАНШЕТА (ГОРИЗОНТАЛЬНО)
+   ======================================== */
+
+/* Планшет горизонтально — все категории помещаются */
+@media (min-width: 768px) and (max-width: 1280px) and (orientation: landscape) {
+    .categories-grid {
+        grid-template-columns: repeat(4, 1fr) !important;
+        gap: 16px !important;
+    }
+    
+    .category-card {
+        min-height: 150px !important;
+        aspect-ratio: 4/3 !important;
+    }
+    
+    .category-name {
+        font-size: 18px !important;
+    }
+    
+    .category-overlay {
+        padding: 16px 12px 14px !important;
+        min-height: 40% !important;
+    }
+    
+    .brand h1 {
+        font-size: 38px !important;
+    }
+    
+    .brand .subtitle {
+        font-size: 12px !important;
+        letter-spacing: 4px !important;
+    }
+    
+    .brand {
+        padding: 10px 0 16px !important;
+    }
+    
+    /* Уменьшаем кнопки навигации */
+    .nav-btn {
+        font-size: 13px !important;
+        padding: 8px 14px !important;
+        min-height: 40px !important;
+        min-width: 70px !important;
+    }
+    
+    .bottom-nav {
+        gap: 10px !important;
+        padding: 10px 0 4px !important;
+    }
+}
+
+/* Планшет вертикально — 3 колонки */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    .categories-grid {
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 14px !important;
+    }
+    
+    .category-card {
+        min-height: 130px !important;
+    }
+    
+    .category-name {
+        font-size: 16px !important;
+    }
+}
+
+/* REDMI Pad 2 специально (2048x1280) */
+@media (min-width: 1280px) and (orientation: landscape) {
+    .categories-grid {
+        grid-template-columns: repeat(4, 1fr) !important;
+        gap: 18px !important;
+    }
+    
+    .category-card {
+        min-height: 160px !important;
+    }
+}
