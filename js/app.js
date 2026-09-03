@@ -11,7 +11,7 @@ const menuData = {
     cocktails: typeof cocktailsData !== 'undefined' ? cocktailsData : [],
     main: typeof mainData !== 'undefined' ? mainData : [],
     desserts: typeof dessertsData !== 'undefined' ? dessertsData : [],
-    additional: typeof additionalData !== 'undefined' ? additionalData : []
+    salads: typeof saladsData !== 'undefined' ? saladsData : []   // ← ИЗМЕНЕНО
 };
 
 // Список всех категорий с их отображением
@@ -66,11 +66,11 @@ const categories = [
         image: 'images/categories/desserts.jpg'
     },
     { 
-        id: 'additional', 
+        id: 'salads',              // ← ИЗМЕНЕНО
         name: 'САЛАТЫ',
         icon: '🥗',
-        data: menuData.additional,
-        image: 'images/categories/additional.jpg'
+        data: menuData.salads,     // ← ИЗМЕНЕНО
+        image: 'images/categories/salads.jpg'   // ← ИЗМЕНЕНО
     }
 ];
 

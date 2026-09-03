@@ -13,7 +13,7 @@ const urls = [
     'js/data/cocktails.js',
     'js/data/main.js',
     'js/data/desserts.js',
-    'js/data/additional.js',
+     'js/data/salads.js',
     'manifest.json'
 ];
 
