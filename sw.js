@@ -58,7 +58,7 @@
 //         })
 //     );
 // });
-const CACHE_NAME = 'memory-v1';
+const CACHE_NAME = 'memory-v2'; 
 const urls = [
     'index.html',
     'css/style.css',
