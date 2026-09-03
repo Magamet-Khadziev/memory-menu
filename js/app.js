@@ -76,7 +76,7 @@ const categories = [
 
 // История навигации - сохраняем категорию и текущую страницу
 let navigationHistory = [];
-let currentCategoryId = null; // Запоминаем текущую категорию
+let currentCategoryId = null;
 
 // Функция для показа главной страницы
 function showMainPage() {
