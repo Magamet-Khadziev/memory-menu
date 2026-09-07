@@ -856,3 +856,46 @@ body {
         min-height: 160px !important;
     }
 }
+/* ========================================
+   РАЗДЕЛИТЕЛЬ МЕЖДУ КАТЕГОРИЯМИ
+   ======================================== */
+
+.divider-item {
+    grid-column: 1 / -1 !important;  /* Растягиваем на всю ширину */
+    text-align: center;
+    padding: 20px 0 10px 0;
+    cursor: default !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    pointer-events: none;  /* Чтобы нельзя было нажать */
+}
+
+.divider-item .divider-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--color-text-muted);
+    letter-spacing: 4px;
+    position: relative;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.divider-item .divider-text::before,
+.divider-item .divider-text::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 1px;
+    background: var(--color-text-muted);
+    opacity: 0.3;
+}
+
+.divider-item .divider-text::before {
+    right: 100%;
+}
+
+.divider-item .divider-text::after {
+    left: 100%;
+}

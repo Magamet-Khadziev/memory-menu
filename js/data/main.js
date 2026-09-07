@@ -24,6 +24,15 @@ const mainData = [
     },
     {
         id: 'main-3',
+        name: 'Пицца Пепперони',
+        description: 'Пицца с пикантной пепперони и сыром',
+        composition: 'Тесто, томатный соус, сыр моцарелла, пепперони, орегано',
+        volume: '550 г',
+        price: '580 ₽',
+        image: 'images/main/pizza_pepperoni.jpg'
+    },
+    {
+        id: 'main-4',
         name: 'Пицца Куриная',
         description: 'Пицца с курицей и соусом песто',
         composition: 'Тесто, курица, сыр, соус песто, помидоры, лук',
@@ -32,7 +41,7 @@ const mainData = [
         image: 'images/main/pizza_chicken.jpg'
     },
     {
-        id: 'main-4',
+        id: 'main-5',
         name: 'Пицца Мясная',
         description: 'Сытная пицца с мясным ассорти',
         composition: 'Тесто, томатный соус, сыр, бекон, колбаса, ветчина, перец',
@@ -41,7 +50,7 @@ const mainData = [
         image: 'images/main/pizza_meat.jpg'
     },
     {
-        id: 'main-5',
+        id: 'main-6',
         name: 'Пицца Цезарь',
         description: 'Пицца с курицей и соусом Цезарь',
         composition: 'Тесто, курица, сыр, салат, соус Цезарь, помидоры',
@@ -52,7 +61,7 @@ const mainData = [
 
     // ===== ТОРТИЛЬЯ =====
     {
-        id: 'main-6',
+        id: 'main-7',
         name: 'Тортилья с грибами',
         description: 'Пшеничная тортилья с грибами и яйцом',
         composition: 'Тортилья, грибы, сыр, яйцо, томаты, зелень',
@@ -63,7 +72,7 @@ const mainData = [
 
     // ===== ХОТ-ДОГИ =====
     {
-        id: 'main-7',
+        id: 'main-8',
         name: 'Хот-дог',
         description: 'Классический хот-дог с сосиской и свежими овощами',
         composition: 'Булочка, сосиска, горчица, кетчуп, лук, маринованные огурцы',

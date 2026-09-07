@@ -5,48 +5,57 @@
 const cocktailsData = [
     {
         id: 'cocktail-1',
-        name: 'Мохито',
+        name: 'Мохито классический',
         description: 'Классический кубинский коктейль с мятой и лаймом',
         composition: 'Ром, мята, лайм, сахарный сироп, содовая',
         volume: '400 мл',
         price: '350 ₽',
-        image: 'images/cocktails/mojito.jpg'
+        image: 'images/cocktails/mojito_classic.jpg'
     },
     {
         id: 'cocktail-2',
-        name: 'Мохито Китайский',
-        description: 'Азиатская версия мохито с имбирём',
-        composition: 'Ром, имбирь, мята, лайм, содовая',
+        name: 'Мохито клубничный',
+        description: 'Освежающий мохито с клубникой',
+        composition: 'Ром, клубника, мята, лайм, сахарный сироп, содовая',
         volume: '400 мл',
         price: '380 ₽',
-        image: 'images/cocktails/chinese_mojito.jpg'
+        image: 'images/cocktails/mojito_strawberry.jpg'
     },
     {
         id: 'cocktail-3',
-        name: 'Лимонад Белый',
-        description: 'Нежный коктейль с белым ромом',
-        composition: 'Белый ром, лимон, сахарный сироп',
+        name: 'Шмель',
+        description: 'Кофейный коктейль с медовым вкусом',
+        composition: 'Кофе, мёд, лимон, имбирь, тоник',
         volume: '350 мл',
-        price: '320 ₽',
-        image: 'images/cocktails/white_lemonade.jpg'
+        price: '360 ₽',
+        image: 'images/cocktails/bumblebee.jpg'
     },
     {
         id: 'cocktail-4',
-        name: 'Масляное',
-        description: 'Авторский коктейль с маслянистой текстурой',
-        composition: 'Ром, сироп, специи',
+        name: 'Бемби',
+        description: 'Нежный сливочный коктейль',
+        composition: 'Сливки, молоко, карамельный сироп, корица',
         volume: '350 мл',
         price: '340 ₽',
-        image: 'images/cocktails/oily.jpg'
+        image: 'images/cocktails/bambi.jpg'
     },
     {
         id: 'cocktail-5',
-        name: 'Китайское',
-        description: 'Экзотический коктейль с азиатскими нотками',
-        composition: 'Водка, личи, имбирь, лайм',
+        name: 'Клубнично-апельсиновый',
+        description: 'Яркий коктейль с клубникой и апельсином',
+        composition: 'Водка, клубника, апельсиновый сок, лёд',
         volume: '350 мл',
-        price: '360 ₽',
-        image: 'images/cocktails/chinese.jpg'
+        price: '390 ₽',
+        image: 'images/cocktails/strawberry_orange.jpg'
+    },
+    {
+        id: 'cocktail-6',
+        name: 'Банановый коктейль',
+        description: 'Кремовый коктейль с бананом и молоком',
+        composition: 'Ром, банан, молоко, сливки, ваниль',
+        volume: '350 мл',
+        price: '370 ₽',
+        image: 'images/cocktails/banana.jpg'
     }
 ];
 

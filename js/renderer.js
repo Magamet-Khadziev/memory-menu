@@ -38,42 +38,40 @@ function renderMainPage() {
     `;
 }
 
-// Рендер страницы категории
 function renderCategoryPage(category) {
-    if (!category || !category.data || category.data.length === 0) {
-        return `
-            <div class="content">
-                <div class="category-header">
-                    <span class="category-icon">${category ? category.icon : '📋'}</span>
-                    <div class="category-title">${category ? category.name : 'Категория'}</div>
-                </div>
-                <p style="color: var(--color-text-muted); font-size: 18px; text-align: center; padding: 40px 0;">
-                    В этой категории пока нет блюд
-                </p>
-            </div>
-            ${renderBottomNav()}
-        `;
-    }
-    
+    // ... проверка на наличие данных ...
+
     return `
         <div class="content">
             <div class="category-header">
-                <span class="category-icon">${category.icon}</span>
+                <span class="category-icon">${category.icon || '📋'}</span>
                 <div class="category-title">${category.name}</div>
                 <span class="category-count">${category.data.length}</span>
             </div>
             <div class="items-grid">
-                ${category.data.map(item => `
-                    <div class="item-card" data-category="${category.id}" data-item-id="${item.id}">
-                        <img src="${item.image}" alt="${item.name}" class="item-image" 
-                             onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22200%22%3E%3Crect width=%22300%22 height=%22200%22 fill=%22%23E8D5C4%22/%3E%3Ctext x=%2250%%22 y=%2250%%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%2399806B%22 font-size=%2224%22 font-family=%22Inter%22%3E📷%3C/text%3E%3C/svg%3E'">
-                        <div class="item-info">
-                            <div class="item-name">${item.name}</div>
-                            <div class="item-description">${item.description}</div>
-                            <div class="item-price">${item.price}</div>
+                ${category.data.map(item => {
+                    // Если это разделитель — рендерим по-особенному
+                    if (item.isDivider) {
+                        return `
+                            <div class="divider-item">
+                                <div class="divider-text">${item.name}</div>
+                            </div>
+                        `;
+                    }
+                    
+                    // Обычная карточка блюда
+                    return `
+                        <div class="item-card" data-category="${category.id}" data-item-id="${item.id}">
+                            <img src="${item.image}" alt="${item.name}" class="item-image" 
+                                 onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22200%22%3E%3Crect width=%22300%22 height=%22200%22 fill=%22%23E8D5C4%22/%3E%3Ctext x=%2250%%22 y=%2250%%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%2399806B%22 font-size=%2224%22 font-family=%22Inter%22%3E📷%3C/text%3E%3C/svg%3E'">
+                            <div class="item-info">
+                                <div class="item-name">${item.name}</div>
+                                <div class="item-description">${item.description || ''}</div>
+                                <div class="item-price">${item.price}</div>
+                            </div>
                         </div>
-                    </div>
-                `).join('')}
+                    `;
+                }).join('')}
             </div>
         </div>
         ${renderBottomNav()}
