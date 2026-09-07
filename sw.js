@@ -1,4 +1,4 @@
-const CACHE_NAME = 'memory-v4';
+const CACHE_NAME = 'memory-v5';
 
 const urls = [
     'index.html',
