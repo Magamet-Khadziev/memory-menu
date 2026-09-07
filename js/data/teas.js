@@ -6,8 +6,8 @@ const teasData = [
     {
         id: 'tea-1',
         name: 'Чёрный чай',
-        description: 'Классический индийский чёрный чай',
-        composition: 'Индийский чёрный чай',
+        description: 'Классический цейлонский чёрный чай',
+        composition: 'Цейлонский чёрный чай',
         volume: '350 мл',
         price: '200 ₽',
         image: 'images/teas/black_tea.jpg'
@@ -50,12 +50,12 @@ const teasData = [
     },
     {
         id: 'tea-6',
-        name: 'Горячий шоколад',
-        description: 'Насыщенный горячий шоколад со сливками',
-        composition: 'Шоколад, молоко, сливки',
-        volume: '300 мл',
-        price: '300 ₽',
-        image: 'images/teas/hot_chocolate.jpg'
+        name: 'Индийский чай',
+        description: 'Насыщенный индийский чай с пряными нотками',
+        composition: 'Индийский чёрный чай, специи',
+        volume: '350 мл',
+        price: '250 ₽',
+        image: 'images/teas/indian.jpg'
     }
 ];
 
